@@ -1,12 +1,24 @@
 <?php include 'db_connect.php' ?>
 <?php 
 extract($_POST);
-if(isset($id)){
+if(isset($id) && !empty($id)){
+	$id = intval($id);
+	error_log("Executing query with id: $id");
 	$qry = $conn->query("SELECT * FROM payments where id=".$id);
-	foreach($qry->fetch_array() as $k => $val){
-		$$k = $val;
+	if($qry) {
+		foreach($qry->fetch_array() as $k => $val){
+			$$k = $val;
+		}
+	} else {
+		// Log or handle error if the query fails
+		error_log("Error executing query: " . $conn->error);
 	}
+} else {
+	// Handle the case where $id is not set or is empty
+	error_log("Error: \$id is not set or is empty");
 }
+
+
 $loan = $conn->query("SELECT l.*,concat(b.lastname,', ',b.firstname,' ',b.middlename)as name, b.contact_no, b.address from loan_list l inner join borrowers b on b.id = l.borrower_id where l.id = ".$loan_id);
 foreach($loan->fetch_array() as $k => $v){
 	$meta[$k] = $v;
