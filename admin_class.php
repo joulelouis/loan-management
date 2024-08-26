@@ -179,8 +179,8 @@ Class Action {
 		
 		if(empty($id)){
 			// Add date_created field for new records
-			$current_date = date('Y-m-d H:i:s'); // current date and time
-			$data .= ", date_created = '$current_date' ";
+			// $current_date = date('Y-m-d'); // current date and time
+			// $data .= ", date_created = '$current_date' ";
 			$save = $this->db->query("INSERT INTO borrowers set ".$data);
 		}else{
 			$save = $this->db->query("UPDATE borrowers set ".$data." where id=".$id);
