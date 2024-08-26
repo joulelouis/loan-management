@@ -9,7 +9,7 @@
 			<form action="" id="manage-plan">
 				<div class="card">
 					<div class="card-header">
-						   Plan's Form
+						   <strong>Plans Form</strong>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">

@@ -62,6 +62,12 @@ Class Action {
 		$data .= ", username = '$username' ";
 		$data .= ", password = '$password' ";
 		$data .= ", type = '$type' ";
+
+		// Add doctor_id to the data string if it's set
+		if (isset($doctor_id) && !empty($doctor_id)) {
+			$data .= ", doctor_id = '$doctor_id' ";
+		}
+
 		if(empty($id)){
 			$save = $this->db->query("INSERT INTO users set ".$data);
 		}else{

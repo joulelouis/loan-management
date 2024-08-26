@@ -9,7 +9,7 @@
 			<form action="" id="manage-loan-type">
 				<div class="card">
 					<div class="card-header">
-						   Loan Type Form
+						   <strong>Loan Type Form</strong>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -153,7 +153,7 @@
 	function delete_ltype($id){
 		start_load()
 		$.ajax({
-			url:'ajax.php?action=delete_loan-type',
+			url:'ajax.php?action=delete_loan_type',
 			method:'POST',
 			data:{id:$id},
 			success:function(resp){

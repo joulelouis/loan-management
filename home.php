@@ -15,7 +15,7 @@
 			<div class="col-lg-12">
 			<div class="card">
 				<div class="card-body">
-				<?php echo "Welcome back ".($_SESSION['login_type'] == 3 ? "Dr. ".$_SESSION['login_name'].','.$_SESSION['login_name_pref'] : $_SESSION['login_name'])."!"  ?>
+				<strong><?php echo "Welcome back, ".($_SESSION['login_type'] == 3 ? "Dr. ".$_SESSION['login_name'].','.$_SESSION['login_name_pref'] : $_SESSION['login_name'])."!"  ?></strong>
 									
 				</div>
 				<hr>
@@ -34,7 +34,7 @@
                                         		
                                     	</div>
                                     </div>
-                                    <i class="fa fa-calendar"></i>
+                                    <!-- <i class="fa fa-calendar"></i> -->
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
@@ -60,7 +60,7 @@
                                         		
                                     	</div>
                                     </div>
-                                    <i class="fa fa-user-friends"></i>
+                                    <!-- <i class="fa fa-user-friends"></i> -->
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
@@ -86,7 +86,7 @@
                                         		
                                     	</div>
                                     </div>
-                                    <i class="fa fa-user-friends"></i>
+                                    <!-- <i class="fa fa-user-friends"></i> -->
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
@@ -114,7 +114,7 @@
                                         		
                                     	</div>
                                     </div>
-                                    <i class="fa fa-user-friends"></i>
+                                    <!-- <i class="fa fa-user-friends"></i> -->
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
