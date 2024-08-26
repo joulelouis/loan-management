@@ -87,7 +87,7 @@
 									<td class="">
 										 <p>Years/Month: <b><?php echo $months ?></b></p>
 										 <p><small>Interest: <b><?php echo $row['interest_percentage']."%" ?></b></small></p>
-										 <p><small>Over dure Penalty: <b><?php echo $row['penalty_rate']."%" ?></b></small></p>
+										 <p><small>Over due Penalty: <b><?php echo $row['penalty_rate']."%" ?></b></small></p>
 									</td>
 									<td class="text-center">
 										<button class="btn btn-sm btn-primary edit_plan" type="button" data-id="<?php echo $row['id'] ?>" data-months="<?php echo $row['months'] ?>" data-interest_percentage="<?php echo $row['interest_percentage'] ?>" >Edit</button>

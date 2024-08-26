@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +16,7 @@
     header('location:login.php');
  include('./header.php'); 
  // include('./auth.php'); 
+
  ?>
 
 </head>
@@ -39,7 +42,8 @@
     </div>
   </div>
   <main id="view-panel" >
-      <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
+    <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
+
   	<?php include $page.'.php' ?>
   	
 
