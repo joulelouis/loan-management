@@ -46,7 +46,7 @@ Class Action {
 		foreach ($_SESSION as $key => $value) {
 			unset($_SESSION[$key]);
 		}
-		header("location:login.php");
+		header("Location: /login");
 	}
 	function logout2(){
 		session_destroy();

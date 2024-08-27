@@ -11,7 +11,7 @@
 
 <?php
 	session_start();
-  if(!isset($_SESSION['login_id']))
+  if(!isset($_SESSION['login_id'])) 
     header('location:login.php');
  include('./header.php'); 
  // include('./auth.php'); 
@@ -41,9 +41,21 @@
     </div>
   </div>
   <main id="view-panel" >
-    <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
+    <?php 
+      $page = isset($_GET['page']) ? $_GET['page'] :'home'; 
 
-  	<?php include $page.'.php' ?>
+      // Sanitize the page name to prevent security issues
+      $page = filter_var($page, FILTER_SANITIZE_STRING);
+
+      // Define the path to the page file
+      $page_file = $page . '.php';
+
+      // Check if the file exists to prevent including non-existent files
+      if (file_exists($page_file)) {
+        include $page_file;
+      }
+    ?>
+
   	
 
   </main>

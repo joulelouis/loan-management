@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="index.php?page=payments">View Payments</a>
+                                <a class="small text-white stretched-link" href="/payments">View Payments</a>
                                 <div class="small text-white">
                                 	<i class="fas fa-angle-right"></i>
                                 </div>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="index.php?page=borrowers">View Borrowers</a>
+                                <a class="small text-white stretched-link" href="/borrowers">View Borrowers</a>
                                 <div class="small text-white">
                                 	<i class="fas fa-angle-right"></i>
                                 </div>
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="index.php?page=loans">View Loan List</a>
+                                <a class="small text-white stretched-link" href="/loans">View Loan List</a>
                                 <div class="small text-white">
                                 	<i class="fas fa-angle-right"></i>
                                 </div>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="index.php?page=loans">View Loan List</a>
+                                <a class="small text-white stretched-link" href="/loans">View Loan List</a>
                                 <div class="small text-white">
                                 	<i class="fas fa-angle-right"></i>
                                 </div>

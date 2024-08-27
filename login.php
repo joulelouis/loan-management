@@ -133,7 +133,7 @@ div#login-right::before {
 			success:function(resp){
 				console.log(resp);
 				if(resp == 1){
-					location.href ='index.php?page=home';
+					location.href ='/home';
 				}else if(resp == 2){
 					location.href ='voting.php';
 				}else{

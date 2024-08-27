@@ -1,0 +1,14 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Check if the request is not for an actual file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Check if the request is not for a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite the URL to the index.php file, passing the URL as a query string
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [QSA,L]
+
+# Redirect clean login URL to login.php
+RewriteRule ^login/?$ login.php [L]

@@ -18,7 +18,7 @@
   			</div>
   		</div> -->
       <div class="col-md-4 text-white">
-      <a href="index.php?page=home" style="color: white;">
+      <a href="/home" style="color: white;">
 					<!-- <span class='icon-field'>
 						<i class="fa fa-home"></i>
 					</span>  -->
